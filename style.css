@@ -427,7 +427,8 @@ button:hover {
   }
   .pc-tab section > div {
     /* height: auto; */
-    height: calc(100vh - 300px);
+    /* height: calc(100vh - 300px); */
+    height: 50vh;
   }
   hr {
 
@@ -439,7 +440,8 @@ button:hover {
 @media (max-width: 350px) {
   .pc-tab section > div {
     /* height: auto; */
-    height: calc(100vh - 300px);
+    /* height: calc(100vh - 300px); */
+    height: 50vh;
   }
 }
 
