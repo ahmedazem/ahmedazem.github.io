@@ -23,6 +23,10 @@
 * {
   box-sizing: border-box;
 }
+
+html,body {
+  height: 100%;
+}
 html { font-size: 16px; }
 @media (min-width: 30em) {
   html { font-size: 18px; }
@@ -41,6 +45,9 @@ body {
     /* padding-bottom: 0; */
   }
 }
+
+
+
 
 a {
   /* color: var(--link-color);
@@ -173,6 +180,7 @@ h1, h2, h3 {
   max-width: 593px;
   width: 100%;
   /* margin: 0 auto; */
+  margin-bottom: 2rem;
 }
 .pc-tab ul {
   list-style: none;
@@ -188,6 +196,8 @@ h1, h2, h3 {
   background: #eeeeee;
   background: #eeeeee38;
   color: #444;
+  width: calc(100%/3);
+  text-align: center;
 }
 .pc-tab ul li label:hover {
   background: #a2a2a238;
@@ -211,7 +221,7 @@ h1, h2, h3 {
   letter-spacing: 0.3px;
   color: #444;
   background: linear-gradient(135deg, rgb(236, 236, 236) 0%, rgb(216, 216, 216) 100%);
-  height: 50vh;
+  height: 48vh;
   overflow-y: auto;
   background: #bfbfbf7a;
   overflow: hidden;
@@ -395,6 +405,35 @@ button:hover {
   left: 0;
 }
 
-.works-list ul li:last-child {
-  all: unset;
+.works-list ul li:last-child:after {
+  border: 0;
+}
+
+@media (max-width: 500px) {
+  body,html {
+   font-size: 14px;
+  }
+  body {
+    /* background-image: none; */
+  }
+  .pc-tab ul li label {
+    padding: 10px 5px;
+  }
+  footer p {
+    margin-bottom: 1rem;
+  }
+  .pc-tab section div {
+    overflow: scroll;
+  }
+  .pc-tab section > div {
+    height: auto;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  body {
+    background-size: auto;
+  }
+ 
 }
