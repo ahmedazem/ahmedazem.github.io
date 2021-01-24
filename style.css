@@ -426,7 +426,20 @@ button:hover {
     overflow: scroll;
   }
   .pc-tab section > div {
-    height: auto;
+    /* height: auto; */
+    height: calc(100vh - 270px);
+  }
+  hr {
+
+    margin: 1.5rem 0;
+
+  }
+}
+
+@media (max-width: 350px) {
+  .pc-tab section > div {
+    /* height: auto; */
+    height: calc(100vh - 300px);
   }
 }
 
